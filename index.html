@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhonebookApp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        
+    <header>
+        <img src="./images/telefone-fixo.png" alt="telefone">
+        <h1>Minha lista de Contatos</h1>
+    </header>
+    <form id="form-contatos">
+        <input type="text" id="nomeContato" required placeholder="Nome do contato"/>
+        <input type="tel" id="Numero" maxlength="15" required placeholder="Número" min="0" onkeyup="handlePhone(event)"/>
+        <button type="submit">Cadastrar</button>
+    </form>
+    <table cellspacing="0">
+        <thead>
+            <tr>
+                <th>Nome </th>
+                <th>Telefone</th>
+            </tr>
+        </thead>
+        <tbody>   
+        </tbody>
+    </table>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
