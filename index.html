@@ -14,25 +14,24 @@
     <div class="container">
         
     <header>
-        <img src="./images/telefone-fixo.png" alt="telefone">
-        <h1>Minha lista de Contatos</h1>
+        <img src="images/book.png" alt="Livros">
+        <h1>Lista de tarefas</h1>
     </header>
-    <form id="form-contatos">
-        <input type="text" id="nomeContato" required placeholder="Nome do contato"/>
-        <input type="tel" id="Numero" maxlength="15" required placeholder="Número" min="0" onkeyup="handlePhone(event)"/>
-        <button type="submit">Cadastrar</button>
+    <form id="form-tarefas">
+        <input type="text" id="nome" required placeholder="Nome"/>
+        <button type="submit" id="inserir">Cadastrar</button>
     </form>
     <table cellspacing="0">
-        <thead>
-            <tr>
-                <th>Nome </th>
-                <th>Telefone</th>
-            </tr>
+        <thead id="lista">
+            <ul>
+                <li type="submit" id="botaoRiscado">Tarefas </li>
+            </ul>
         </thead>
         <tbody>   
         </tbody>
     </table>
     </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
